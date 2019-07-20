@@ -1,2 +1,5 @@
 # Homebutton
 type sysfs_homebutton, fs_type, sysfs_type, mlstrustedobject;
+
+# Kcal
+type kcal_dev, sysfs_type, fs_type;
