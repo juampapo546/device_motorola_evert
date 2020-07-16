@@ -1,18 +1,11 @@
 # Audio ACDB
-vendor/etc/acdbdata/common/Bluetooth_cal.acdb
-vendor/etc/acdbdata/common/General_cal.acdb
-vendor/etc/acdbdata/common/Global_cal.acdb
-vendor/etc/acdbdata/common/Handset_cal.acdb
-vendor/etc/acdbdata/common/Hdmi_cal.acdb
-vendor/etc/acdbdata/common/Headset_cal.acdb
-vendor/etc/acdbdata/common/Speaker_cal.acdb
-vendor/etc/acdbdata/idn/Bluetooth_cal.acdb
-vendor/etc/acdbdata/idn/General_cal.acdb
-vendor/etc/acdbdata/idn/Global_cal.acdb
-vendor/etc/acdbdata/idn/Handset_cal.acdb
-vendor/etc/acdbdata/idn/Hdmi_cal.acdb
-vendor/etc/acdbdata/idn/Headset_cal.acdb
-vendor/etc/acdbdata/idn/Speaker_cal.acdb
+vendor/etc/acdbdata/Bluetooth_cal.acdb
+vendor/etc/acdbdata/General_cal.acdb
+vendor/etc/acdbdata/Global_cal.acdb
+vendor/etc/acdbdata/Handset_cal.acdb
+vendor/etc/acdbdata/Hdmi_cal.acdb
+vendor/etc/acdbdata/Headset_cal.acdb
+vendor/etc/acdbdata/Speaker_cal.acdb
 
 # Camera
 etc/zaf/zaf_mot_s5k2l7sa.json:vendor/etc/zaf/zaf_mot_s5k2l7sa.json
