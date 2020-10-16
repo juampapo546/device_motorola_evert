@@ -30,6 +30,9 @@ on early-init
 
 on property:ro.boot.hardware.sku=XT1926-9
     setprop ro.hw.nfc false
+    
+on early-init
+    setprop ro.boot.product.hardware.sku qcril
 
 on boot
     chown system system /sys/homebutton/enable
