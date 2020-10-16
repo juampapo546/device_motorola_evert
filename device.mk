@@ -77,7 +77,9 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    fstab.qcom
+    fstab.qcom \
+    init.evert.rc
+
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \

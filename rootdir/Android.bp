@@ -3,3 +3,9 @@ prebuilt_etc {
     vendor: true,
     src: "etc/fstab.qcom",
 }
+
+prebuilt_etc {
+    name: "init.evert.rc",
+    vendor: true,
+    src: "etc/init.evert.rc",
+}
