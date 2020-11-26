@@ -85,25 +85,11 @@
                 android:resource="@string/fingerprint_gestures_manage_summary" />
         </activity>
 
+        <!-- Display Calibration -->
         <activity
-            android:name=".ActionsPreferenceActivity"
-            android:label="@string/device_gestures_title"
-            android:theme="@style/Theme.Main">
-            <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-            </intent-filter>
-            <meta-data
-                android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_settings_gestures" />
-            <meta-data
-                android:name="com.android.settings.summary"
-                android:resource="@string/device_gestures_summary" />
-        </activity>
-
-        <activity
-            android:name=".MainPreferenceActivity"
-            android:label="@string/moto_gestures_panel_title"
-            android:theme="@style/Theme.Main">
+            android:name="com.moto.actions.DisplayCalibration"
+            android:label="@string/kcal_title"
+	        android:theme="@style/Theme.Main">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
@@ -112,22 +98,14 @@
                 android:value="com.android.settings.category.ia.system" />
             <meta-data
                 android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_settings_gestures" />
+                android:resource="@drawable/ic_settings_kcal" />
             <meta-data
                 android:name="com.android.settings.summary"
-                android:resource="@string/screen_gestures_panel_summary" />
-        </activity>
-
-        <!-- Display Calibration -->
-        <activity
-            android:name="com.moto.actions.DisplayCalibration"
-            android:label="@string/kcal_title"
-	        android:theme="@style/Theme.Main">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
+                android:resource="@string/kcal_summary" />
         </activity>
 
     </application>
 
 </manifest>
+
+	

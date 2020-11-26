@@ -1,0 +1,10 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <Preference
+        android:name="com.moto.actions.DisplayCalibration"
+        android:label="@string/kcal_title"
+        android:summary="@drawable/ic_settings_kcal"
+        android:icon="@string/kcal_summary" />
+
+</PreferenceScreen>
