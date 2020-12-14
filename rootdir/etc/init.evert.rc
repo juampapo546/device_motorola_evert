@@ -62,3 +62,7 @@ on boot
     chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_val
     chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_min
     chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal
+    
+on property:sys.boot_completed=1
+    write  /sys/devices/platform/kcal_ctrl.0/kcal "230 230 230"
+    write  /sys/devices/platform/kcal_ctrl.0/kcal_enable 1
