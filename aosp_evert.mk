@@ -13,9 +13,10 @@
 # limitations under the License.
 #
 
-# Inherit some common StatiXOS stuff.
-$(call inherit-product, vendor/statix/config/common.mk)
-$(call inherit-product, vendor/statix/config/gsm.mk)
+# Inherit some common PE stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
 # Inherit some core AOSP makefiles.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -24,16 +25,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device makefile.
 $(call inherit-product, device/motorola/evert/device.mk)
 
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+
 # Device identifiers.
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := evert
-PRODUCT_NAME := statix_evert
+PRODUCT_NAME := aosp_evert
 PRODUCT_MODEL := Moto G6 Plus
 
 # Fingerprint overrides.
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=evert \
     PRIVATE_BUILD_DESC="evert-user 8.0.0 OPW27.113-89 116 release-keys"
-
-BUILD_FINGERPRINT := motorola/evert/evert:8.0.0/OPW27.113-89/116:user/release-keys
