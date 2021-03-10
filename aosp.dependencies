@@ -1,12 +1,6 @@
 
 [
 {
-"remote":     "github",
-"repository": "PixelExperience-Devices/kernel_motorola_sdm660",
-"target_path": "kernel/motorola/msm8998",
-"branch":      "eleven"
-},
-{
 "remote":      "pixel-devices-blobs",
 "repository":  "vendor_motorola_evert",
 "target_path": "vendor/motorola/evert",
