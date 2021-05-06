@@ -12,6 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Vendor blobs
+$(call inherit-product-if-exists, vendor/motorola/evert/evert-vendor.mk)
+$(call inherit-product, vendor/motorola/sdm660-common/sdm660-common-vendor.mk)
+
+#Props
+-include $(LOCAL_PATH)/vendor_prop.mk
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@5.0-impl \
